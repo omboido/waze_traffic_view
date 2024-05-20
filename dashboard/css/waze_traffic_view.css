@@ -1,0 +1,127 @@
+@import url(https://fonts.googleapis.com/css?family=Kanit);
+
+:root {
+  --bkColor: rgba(255, 255, 255, 0.5); /* rgba(240, 198, 10, 0.5); */
+  --font: Kanit;
+  --level0: #1bab50;
+  --level1: #ffc400;
+  --level2: #fd804b;
+  --level3: #cb0000;
+  --level4: #75011d;
+  --level5: #000000;
+  --alternate-route: #2600ff;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  background: #1b213b;
+  color: #777;
+  font-family: var(--font), sans-serif;
+}
+
+th,
+td {
+  padding: 0px 8px;
+}
+
+#usersOnJamsTable {
+  border-collapse: collapse;
+  width: auto;
+  margin: auto;
+}
+
+#usersOnJamsTable tr {
+  border: none;
+}
+
+#usersOnJamsTable td {
+  border-right: solid 1px #000;
+  border-left: solid 1px #000;
+}
+
+.sidebar {
+  min-width: 375px;
+  width: 200px;
+  height: 100vh;
+  background-color: #444;
+  color: #fff;
+  overflow-y: scroll;
+}
+.handle {
+  width: 10px;
+  height: 100vh;
+  background-color: #666;
+  cursor: ew-resize;
+}
+.content {
+  flex: 1;
+  padding: 20px;
+  background-color: #333;
+}
+
+.body-bg {
+  background: #f3f4fa !important;
+}
+.trafficmeter0 {
+  background-color: var(--level0);
+}
+.trafficmeter1 {
+  background-color: var(--level1);
+}
+.trafficmeter2 {
+  background-color: var(--level2);
+}
+.trafficmeter3 {
+  background-color: var(--level3);
+}
+.trafficmeter4 {
+  background-color: var(--level4);
+}
+.trafficmeter5 {
+  background-color: var(--level5);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong {
+  font-weight: 600;
+}
+
+.box .apexcharts-xaxistooltip {
+  background: #1b213b;
+  color: #fff;
+}
+
+.content-area {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.box {
+  background-color: #262d47;
+  padding: 25px 25px;
+  border-radius: 4px;
+}
+
+.columnbox {
+  padding-right: 15px;
+}
+.radialbox {
+  max-height: 333px;
+  margin-bottom: 60px;
+}
+
+.apexcharts-legend-series tspan:nth-child(3) {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.spinner-border {
+  display: none;
+}

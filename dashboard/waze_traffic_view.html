@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script defer type="module" src="./js/waze_traffic_view.js"></script>
+    <title>IT - Indicadores de Trânsito - Panorama Waze</title>
+    <link rel="icon" href="../img/favicon_it.svg" />
+    <link rel="stylesheet" href="css/waze_traffic_view.css" />
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+  </head>
+  <body>
+    <div id="trafficViewTableContainer" class="sidebar">
+      <div id="wazeometerContainer" style="width: 100%; margin: auto">
+        <table
+          cellspacing="0"
+          cellpadding="0"
+          width="100%"
+          style="padding: 8px"
+        >
+          <caption
+            id="wazelengthsRow"
+            style="padding: 8px 8px 0px 8px"
+          ></caption>
+          <tbody style="text-align: center">
+            <tr
+              id="wazeometerRow"
+              style="color: white; border: 3px solid rgb(31, 31, 31)"
+            ></tr>
+          </tbody>
+        </table>
+      </div>
+      <table
+        id="trafficViewTable"
+        width="100%"
+        style="color: #333; padding: 8px"
+      >
+        <tbody id="trafficViewList"></tbody>
+      </table>
+    </div>
+    <div class="handle" id="handle"></div>
+    <div class="content">
+      <div
+        id="usersOnJamsContainer"
+        style="
+          color: white;
+          width: auto;
+          margin: auto;
+          display: flex;
+          justify-content: space-between;
+          align-items: flex-start;
+        "
+      >
+        <table id="usersOnJamsTable" cellspacing="0" cellpadding="0">
+          <caption style="font-size: 14px">
+            Agora - Extensão de congestionamento X Quantidade de usuários -
+            <a
+              href="https://support.google.com/waze/partners/answer/13658466?hl=en&ref_topic=10616686#zippy=%2Ctraffic-view-feed-example"
+              target="_blank"
+              style="color: white"
+              >Waze TrafficView feed specs</a
+            >
+          </caption>
+          <tbody
+            id="usersOnJamsTableBody"
+            style="text-align: right; font-size: 14px"
+          ></tbody>
+        </table>
+        <div
+          style="
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+          "
+        ></div>
+      </div>
+      <br />
+      <div id="usersOnJamsApexCharts">
+        <div id="usersOnJamsTimeSeriesContainer"></div>
+        <div id="usersOnJamsCountTimeSeriesContainer"></div>
+        <div id="monitoredKmTimeSeriesContainer"></div>
+      </div>
+    </div>
+  </body>
+</html>
